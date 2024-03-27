@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Carrusel de Imágenes</title>
+  <!-- Enlace a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Mi Proyecto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Materias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina2.html">Deportes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina3.html">Otros Intereses</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+    <!-- Indicadores -->
+    <ol class="carousel-indicators">
+      <li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
+      <li data-target="#miCarrusel" data-slide-to="1"></li>
+      <li data-target="#miCarrusel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Contenedor de las diapositivas -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/2.jpg" class="d-block w-100" alt="Imagen 1" width="500px" height="600px">
+      </div>
+      <div class="carousel-item">
+        <img src="img/3.jpeg" class="d-block w-100" alt="Imagen 2" width="500px" height="600px">
+      </div>
+      <div class="carousel-item">
+        <img src="img/2.jpg" class="d-block w-100" alt="Imagen 3" width="500px" height="600px">
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+  <div class="container3">
+  <div class="tech-container tech-info">
+    <h2 class="tech-title">Tecnologías de Información</h2>
+    <p>Las tecnologías de información comprenden el estudio, diseño, desarrollo, implementación, soporte o gestión de sistemas de información informáticos, principalmente sistemas de computadoras, software y redes de computadoras.</p>
+  </div>
+  <div class="tech-container tech-ai">
+    <h2 class="tech-title">Inteligencia Artificial</h2>
+    <p>La inteligencia artificial es la simulación de procesos de inteligencia humana por parte de sistemas informáticos. Estos procesos incluyen el aprendizaje (adquirir información y reglas para el uso de la información), el razonamiento (usar las reglas para llegar a conclusiones aproximadas o definitivas) y la autocorrección.</p>
+  </div>
+</div>
+
+
+  <!-- Enlace a jQuery y Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
